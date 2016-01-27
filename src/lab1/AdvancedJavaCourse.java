@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Phillip Bremer
  * @version     1.00
  */
 public class AdvancedJavaCourse {
