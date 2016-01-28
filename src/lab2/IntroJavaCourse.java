@@ -6,8 +6,8 @@ package lab2;
  * @author      Phillip Bremer
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
+public class IntroJavaCourse implements Lab2Interface {
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;

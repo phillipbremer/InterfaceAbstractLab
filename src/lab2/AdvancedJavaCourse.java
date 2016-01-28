@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      Phillip Bremer
  * @version     1.00
  */
-public class AdvancedJavaCourse {
+public class AdvancedJavaCourse implements Lab2Interface {
     private String courseName;
     private String courseNumber;
     private double credits;

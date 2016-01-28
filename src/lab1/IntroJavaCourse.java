@@ -6,16 +6,21 @@ package lab1;
  * @author      Phillip Bremer
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
+public class IntroJavaCourse extends Lab1Superclass {
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
+    
     public IntroJavaCourse(String courseName, String courseNumber) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
     }
+
+    /*IntroJavaCourse() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }*/
 
     public String getCourseNumber() {
         return courseNumber;
@@ -24,11 +29,18 @@ public class IntroJavaCourse {
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
-
+    
     public double getCredits() {
         return credits;
     }
 
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
 
     public String getPrerequisites() {
         return prerequisites;

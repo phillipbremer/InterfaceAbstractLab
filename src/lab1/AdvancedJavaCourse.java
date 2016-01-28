@@ -8,8 +8,8 @@ import javax.swing.JOptionPane;
  * @author      Phillip Bremer
  * @version     1.00
  */
-public class AdvancedJavaCourse {
-    String courseName;
+public class AdvancedJavaCourse extends Lab1Superclass {
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
@@ -28,6 +28,10 @@ public class AdvancedJavaCourse {
         return prerequisites;
     }
 
+    public double getCredits() {
+        return credits;
+    }
+
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -36,7 +40,7 @@ public class AdvancedJavaCourse {
         }
         this.prerequisites = prerequisites;
     }
-
+    
     public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
