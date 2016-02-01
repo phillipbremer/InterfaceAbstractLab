@@ -12,34 +12,55 @@ public class IntroJavaCourse implements ProgrammingClass {
     private double credits;
     private String prerequisites;
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+    @Override
+    public String getCourseName(){
+        return courseName;
     }
-
-    public String getCourseNumber() {
+    
+    @Override
+    public void setCourseName(String courseName){
+        if(courseName == null || courseName.isEmpty()){
+            System.out.println("This cannot be blank");
+        }else{
+            this.courseName = courseName;
+        }
+    }
+    
+    @Override
+    public String getCourseNumber(){
         return courseNumber;
     }
-
-    public void setCourseNumber(String courseNumber) {
-        this.courseNumber = courseNumber;
+    
+    @Override
+    public void setCourseNumber(String courseNumber){
+        if(courseNumber == null || courseNumber.isEmpty()){
+            System.out.println("This cannot be empty");
+        }else{
+            this.courseNumber = courseNumber;
+        }
     }
-
-    public double getCredits() {
+    
+    @Override
+    public double getCredits(){
         return credits;
     }
-
-    public void setCredits(double credits) {
+    
+    @Override
+    public void setCredits(double credits){
         this.credits = credits;
     }
-
-    public String getPrerequisites() {
+    
+    @Override
+    public String getPrerequisites(){
         return prerequisites;
     }
-
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
-    }
-
     
+    @Override
+    public void setPrerequisites(String prerequisites){
+        if(prerequisites == null || prerequisites.isEmpty()){
+            System.out.println("This cannot be empty");
+        }else{
+            this.prerequisites = prerequisites;
+        }
+    }   
 }

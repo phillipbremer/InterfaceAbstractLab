@@ -12,51 +12,36 @@ public class IntroJavaCourse extends ProgrammingClass {
     private double credits;
     private String prerequisites;
 
-    
-    public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
-    }
-
-    /*IntroJavaCourse() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }*/
-
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
-    public void setCourseNumber(String courseNumber) {
-        this.courseNumber = courseNumber;
-    }
-    
-    public double getCredits() {
-        return credits;
-    }
-
-    public String getCourseName() {
-        return courseName;
-    }
-
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
-
-    public String getPrerequisites() {
-        return prerequisites;
-    }
-
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
-    }
-
-        public void setCredits(double credits) {
-        if(credits < 0 || credits > 5.0) {
-            System.out.println(
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
+    @Override
+    public void setCourseName(String courseName){
+        if(courseName == null || courseName.isEmpty()){
+            System.out.println("This cannot be blank");
+        }else{
+            this.courseName = courseName;
         }
-        this.setCredits(credits);
     }
-
+    
+    @Override
+    public void setCourseNumber(String courseNumber){
+        if(courseNumber == null || courseNumber.isEmpty()){
+            System.out.println("This cannot be empty");
+        }else{
+            this.courseNumber = courseNumber;
+        }
+    }
+    
+    @Override
+    public void setCredits(double credits){
+        this.credits = credits;
+    }
+    
+    @Override
+    public void setPrerequisites(String prerequisites){
+        if(prerequisites == null || prerequisites.isEmpty()){
+            System.out.println("This cannot be empty");
+        }else{
+            this.prerequisites = prerequisites;
+        }
+    }
+    
 }

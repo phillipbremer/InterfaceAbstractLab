@@ -10,44 +10,33 @@ package lab1;
  * @author Phillip Bremer
  */
 public abstract class ProgrammingClass {
-    //adsf
-    private String firstName;
-    private String lastName;
-    private String studentId;
+    private String courseName;
+    private String courseNumber;
+    private double credits;
+    private String prerequisites;
     
-    /*public abstract String getCourseNumber();
-    public abstract String getName();
-
-    public Lab1Superclass(String firstName, String lastName, String studentId) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.studentId = studentId;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
-    */
+    public final String getCourseName(){
+      return courseName;  
+    };
     
-
+    public abstract void setCourseName(String courseName);
+    
+    public final String getCourseNumber(){
+      return courseNumber;  
+    };
+    
+    public abstract void setCourseNumber(String courseNumber);
+    
+    public final double getCredits(){
+      return credits;  
+    };
+    
+    public abstract void setCredits(double credits);
+    
+    public final String getPrerequisites(){
+      return prerequisites;  
+    };
+    
+    public abstract void setPrerequisites(String prerequisites);
+    
 }
