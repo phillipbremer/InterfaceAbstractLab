@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      Phillip Bremer
  * @version     1.00
  */
-public class IntroToProgrammingCourse implements Lab2Interface {
+public class IntroToProgrammingCourse implements ProgrammingClass {
     private String courseName;
     private String courseNumber;
     private double credits;

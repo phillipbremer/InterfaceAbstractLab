@@ -9,7 +9,7 @@ package lab1;
  *
  * @author Phillip Bremer
  */
-public abstract class Lab1Superclass {
+public abstract class ProgrammingClass {
     //adsf
     private String firstName;
     private String lastName;

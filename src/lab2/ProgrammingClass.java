@@ -9,7 +9,7 @@ package lab2;
  *
  * @author Phillip Bremer
  */
-public interface Lab2Interface {
+public interface ProgrammingClass {
     public abstract String getCourseName();
     public void setCourseName(String courseName);
     public abstract String getCourseNumber();

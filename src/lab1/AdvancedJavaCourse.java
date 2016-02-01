@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      Phillip Bremer
  * @version     1.00
  */
-public class AdvancedJavaCourse extends Lab1Superclass {
+public class AdvancedJavaCourse extends ProgrammingClass {
     private String courseName;
     private String courseNumber;
     private double credits;

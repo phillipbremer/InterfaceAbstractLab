@@ -6,7 +6,7 @@ package lab1;
  * @author      Phillip Bremer
  * @version     1.00
  */
-public class IntroJavaCourse extends Lab1Superclass {
+public class IntroJavaCourse extends ProgrammingClass {
     private String courseName;
     private String courseNumber;
     private double credits;

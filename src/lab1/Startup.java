@@ -9,7 +9,7 @@ package lab1;
  *
  * @author Phillip Bremer
  */
-public class Lab1Main {
+public class Startup {
 
     /**
      * @param args the command line arguments
