@@ -22,5 +22,8 @@ public class Startup {
         for(ProgrammingClass pc : courses){
             pc.setCourseName(null);
         }
+        IntroToProgrammingCourse prog1 = new IntroToProgrammingCourse();
+        IntroJavaCourse prog2 = new IntroJavaCourse();
+        AdvancedJavaCourse prog3 = new AdvancedJavaCourse();
     }
 }

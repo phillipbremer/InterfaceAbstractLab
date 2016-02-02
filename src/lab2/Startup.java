@@ -16,6 +16,15 @@ public class Startup {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ProgrammingClass[] courses = {
+            new AdvancedJavaCourse(), new IntroJavaCourse(), 
+            new IntroToProgrammingCourse()};
+        for(ProgrammingClass pc : courses){
+            pc.setCourseName(null);
+        }
+        IntroToProgrammingCourse prog1 = new IntroToProgrammingCourse();
+        IntroJavaCourse prog2 = new IntroJavaCourse();
+        AdvancedJavaCourse prog3 = new AdvancedJavaCourse();
         
     }
     
